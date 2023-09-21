@@ -9,7 +9,7 @@ You can find step-by-step instructions on the [course website](https://react-v8.
 - a _preconfigured_ **.eslintrc.json** file.
 - a _preconfigured_ **vite.config.js** file.
 - a _"preconfigured"_ **prettierrc** file (uses defaults)
-- a _preconfigured_ **gitignore** file (rename to `.gitignore` to make it work properly!!)
+- a _preconfigured_ **gitignore** file
 
 ## Setup
 
