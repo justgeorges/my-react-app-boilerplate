@@ -25,7 +25,7 @@ This creates a `package.json` file.
 in your terminal, run `npm i -D prettier`
 if you are using VSCode, ensure that the [Prettier extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) is installed. **Recommended:** Navigate to your settings and ensure prettier only runs if a prettier config file is present.
 
-(inside the `package.json` file under `"scripts"`, I've included the below line for those not using VS Code)
+inside the `package.json` file under `"scripts"`, write the following:
 
 ```json
  "format": "prettier --write \"src/**/*.{js, jsx}\""
@@ -78,7 +78,7 @@ If you are using VSCode, ensure that the [ESLint extension](https://marketplace.
 }
 ```
 
-(I've also added the following to the `package.json` file, under `"scripts"`)
+add the following to `package.json`
 
 ```json
 "lint": "eslint  \"src/**/*.{js, jsx}\" --quiet",
@@ -135,6 +135,21 @@ In your terminal, run `npm i -D eslint-plugin-import eslint-plugin-jsx-a11y esli
       }
     }
   }
+```
+
+### 7 Editing Your package.json file
+
+in `package.json`, ensure the following are in "scripts"
+
+```json
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
+    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --quiet",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
 ```
 
 Once again, these settings are already written, so the terminal commands are the only thing necessary to actually set everything up.
